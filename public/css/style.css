@@ -1,0 +1,1579 @@
+/* Nikola Dotlic */
+
+body {
+	margin:0;
+	padding:0;
+	font-family: 'Work Sans', sans-serif;
+	background-color:#fff;
+}
+img {
+	vertical-align:bottom;
+}
+
+.has-error {
+	font-size: 85%;
+}
+
+#header {
+	width: 100%;
+	margin: 0;
+	padding:0;
+	height:100%;
+	min-height:800px;
+	text-align: center;
+	overflow:hidden;
+	margin-bottom:40px;
+	-webkit-animation: slide 40s ease infinite;
+}
+@-webkit-keyframes slide {
+	0% { background-position: 0 0; }
+	50% { background-position: -400px 0; }
+	100% { background-position: 0 0; }
+}
+
+.header-top {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	color:#fff;
+}
+.header-top h1 {
+	border-bottom:1px solid #fff;
+	padding-bottom:5px;
+	letter-spacing:2px;
+	font-weight:inherit;
+}
+.header-top p {
+	margin-top:-10px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+}
+
+
+.header-sredina {
+	position: absolute;
+	top: 310px;
+	left: 50%;
+	transform: translateX(-50%);
+	color:#fff;
+}
+.header-sredina h1 {
+	color:#fff;
+	font-size:45px;
+	letter-spacing:1px;
+	line-height:55px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:normal;
+}
+
+.header-bottom  {
+	position: absolute;
+	bottom: 10%;
+	text-transform: uppercase;
+	left: 50%;
+	letter-spacing: 7px;
+	cursor: pointer;
+	transform: translateX(-50%);
+	width: 90%;
+	text-align: center;
+}
+.header-bottom a {
+	color:#fff;
+	text-decoration:none;
+	opacity: 0.2;
+	transition:0.3s ease all;
+}
+.header-bottom a:hover {
+	opacity: 1;
+	border-bottom:1px solid #028e70;
+}
+
+.header-left {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 75px;
+	z-index: 999999;
+	display:block;
+	background:#fff;
+	box-shadow:1px 0px 15px #111111;
+}
+
+.header-left-top {
+	height: 75px;
+	width: 75px;
+	display: block;
+	position: relative;
+}
+.header-left-top a {
+	margin-top:10px;
+	text-decoration:none;
+	color:#fff;
+	display:block;
+}
+
+.header-left-sredina {
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	top: 50%;
+	display: block;
+	cursor: pointer;
+	margin-left:75px;
+}
+.header-left-sredina a {
+	text-decoration:none;
+	color:#fff;
+	display:block;
+}
+
+
+.header-left-sredina .sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #028e70;
+	overflow-x: hidden;
+	transition: 0.4s;
+	padding-top: 15%;
+	box-shadow:2px 0px 5px #4A4A4A;
+}
+
+.header-left-sredina .sidenav a {
+	padding: 12px 0;
+	text-align:center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #fff;
+	display: block;
+	transition: 0.3s ease all;
+	margin-bottom:10px;
+}
+
+.header-left-sredina .sidenav a:hover {
+	color: #333;
+}
+
+.header-left-sredina .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#header-left-sredina-open {
+	transition: margin-left .5s;
+	padding: 16px;
+}
+#header-left-sredina-open span {
+	color:#333;
+	position:absolute;
+	margin-left:-85px;
+}
+#header-left-sredina-open .fa-bars {
+	font-size:25px;
+	padding:10px 0;
+	
+}
+#header-left-sredina-open .fa-bars:hover {
+	color:#028e70;
+}
+
+@media screen and (max-height: 450px) {
+	.header-left-sredina .sidenav {padding-top: 15px;}
+	.header-left-sredina .sidenav a {font-size: 18px;}
+}
+
+
+#main {
+	position:relative;
+	overflow:hidden;
+	display:block;
+	clear:both;
+}
+.wrapper {
+	width:1200px;
+	margin:0 auto;
+}
+
+.main_levo {
+	float:left;
+	width:600px;
+	height:500px;
+}
+
+.main_levo img {
+	width:100%;
+	height:100%;
+}
+.main_desno {
+	float:right;
+	width:550px;
+	height:500px;
+}
+.main_desno h3 {
+	font-weight:inherit;
+	font-size:25px;
+	letter-spacing:2px;
+	line-height:40px;
+	margin-top:70px;
+}
+.main_desno p:nth-of-type(1) {
+	margin-top:10%;
+	transform: translateX(0%);
+}
+
+.main_desno a {
+	text-align:center;
+	text-decoration:none;
+	color:#fff;
+	padding:15px;
+	background:#028e70;
+	border:2px solid #028e70;
+	display:block;
+	width:25%;
+	margin-top:80px;
+	transition:0.5s ease all;
+	text-transform:uppercase;
+}
+.main_desno a:hover {
+	background:#fff;
+	color:#028e70;
+}
+
+
+.main_levo2 {
+	float:left;
+	width:550px;
+	height:500px;
+	margin-left:30px;
+}
+.main_desno2 img {
+	width:100%;
+	height:100%;
+}
+.main_desno2 {
+	float:right;
+	width:600px;
+	height:500px;
+}
+.main_levo2 h3 {
+	font-weight:inherit;
+	font-size:25px;
+	letter-spacing:2px;
+	line-height:40px;
+	margin-top:70px;
+}
+.main_levo2 p:nth-of-type(1) {
+	margin-top:10%;
+	transform: translateX(0%);
+}
+
+.main_levo2 a {
+	text-align:center;
+	text-decoration:none;
+	color:#fff;
+	padding:15px;
+	background:#028e70;
+	border:2px solid #028e70;
+	display:block;
+	width:25%;
+	margin-top:80px;
+	transition:0.5s ease all;
+	text-transform:uppercase;
+}
+.main_levo2 a:hover {
+	background:#fff;
+	color:#028e70;
+}
+
+
+.nastavak_main {
+	position:relative;
+	display:block;
+	clear:both;
+	overflow:hidden;
+	height:500px;
+	margin-top:80px;
+	margin-bottom:50px;
+	width:100%;
+}
+.nastavak_main h1 {
+	text-align:center;
+	color:#000;
+	margin-top:12%;
+	line-height:50px;
+	font-weight:inherit;
+	background:rgba(255,255,255,0.6);
+	padding:15px;
+}
+.nastavak_main p {
+	text-align:center;
+	color:#000;
+	font-weight:bold;
+	letter-spacing:0.5px;
+}
+
+
+
+
+/* SLIDER WHO WE ARE  ..*/
+/* SLIDER WHO WE ARE  ..*/
+/* SLIDER WHO WE ARE  ..*/
+/* SLIDER WHO WE ARE  ..*/
+
+.nastavak_main2 {
+	position:relative;
+	display:block;
+	clear:both;
+	overflow:hidden;
+	background:#fff;
+	width:100%;
+	margin-bottom:20px;
+}
+
+#main_who_we_are {
+	clear:both;
+	position:relative;
+	margin-bottom:50px;
+	width:90%;
+	margin-left:8%;
+}
+
+#main_who_we_are h3 {
+	text-align:center;
+	color:#09181F;
+	margin-top:70px;
+	font-weight:300;
+	font-size:27px;
+}
+.slider-active .owl-nav div {
+	font-size: 30px;
+	height: 29px;
+	/* line-height: 40px; */
+	position: absolute;
+	text-align: center;
+	top: -40px;
+	right: 55px;
+	transform: translateY(-50%);
+	width: 30px;
+	z-index: 1;
+	color: #fff;
+	background: #333;
+	padding: 0 0 5px 0;
+} 
+
+.slider-active .owl-nav div:hover {
+	background:#028e70;
+}
+
+.slider-active .owl-nav div.owl-next {
+	left:auto;
+	right:15px;
+}
+
+.owl-carousel .owl-item img {
+	width:250px;
+	height:345px;
+}
+
+.main_who_we_are {
+	background:#fff;
+	width:250px;
+	padding:5px;
+	margin-top:30px;
+	clear:both;
+	margin-left:20%;
+	overflow:hidden;
+	text-align:center;
+	min-height:540px;
+}
+
+.who_one {
+	filter: grayscale(100%);
+}
+.who_one:hover {
+	filter: grayscale(0%);
+	text-align:center;
+	padding:5px;
+	border-radius:5px;
+}
+
+.who_one_p1 {
+	font-weight:bold;
+	color:#555555;
+	letter-spacing:1px;
+	border-bottom:1px solid #fff;
+	font-size:18px;
+}
+.who_one_p2 {
+	font-weight:normal;
+	color:#555555;
+}
+.who_one:hover .who_one_p1 {
+	border-bottom:1px solid #028e70;
+}
+.who_one:hover .who_one_p2 {
+	color:#000;
+}
+.who_one:hover .fa-wikipedia-w {
+	color:#fff;
+}
+
+.who_one a {
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 0;
+	background: #028e70;
+	border: 2px solid #028e70;
+	display: block;
+	transition: 0.5s ease all;
+	text-transform: uppercase;
+	bottom:0;
+	position:absolute;
+	width:250px;
+}
+.who_one a:hover {
+	color:#000;
+}
+.who_one:hover a {
+	border-radius:10px;
+}
+
+.who_one_li {
+	background:#1a85bc;
+	color:#fff;
+	padding:5px;
+	border-radius:10px;
+	
+}
+
+.who_one_fa {
+	background:#46629e;
+	color:#fff;
+	padding:5px;
+	border-radius:5px;
+}
+
+.who_one_tw {
+	background:#00acee;
+	color:#fff;
+	padding:5px;
+	border-radius:10px;
+	
+}
+
+#about_our_company {
+	clear:both;
+	
+}
+
+
+/* KRAJ WHO WE ARE  */
+/* KRAJ WHO WE ARE  */
+/* KRAJ WHO WE ARE  */
+/* KRAJ WHO WE ARE  */
+
+
+/*  ABOUT  *//*  ABOUT  */
+/*  ABOUT  *//*  ABOUT  */
+/*  ABOUT  *//*  ABOUT  */
+
+
+#about_us {
+	width:1200px;
+	margin:0 auto;
+	position:relative;
+	display:block;
+	clear:both;
+	overflow:hidden;
+	min-height:400px;
+}
+
+#about_us .about_left {
+	float:left;
+	width:400px;
+	height:550px;
+	position:absolute;
+	left:7%;
+}
+#about_us .about_left img {
+	width:100%;
+}
+
+#about_us .about_right {
+	float:right;
+	background:#028e70;
+	width:800px;
+	color:#fff;
+	padding-bottom:30px;
+	border-radius:5px;
+}
+#about_us .about_right h1 {
+	text-align:center;
+	margin-bottom:25px;
+}
+#about_us .about_right p {
+	margin-left:15%;
+	margin-right:10%;
+}
+
+#contact {
+	display: block;
+	position: relative;
+	height:460px;
+	clear: both;
+	margin-bottom:50px;
+}
+#contact h1 {
+	font-weight:inherit;
+	text-align:center;
+
+}
+
+#contact .row {
+	margin: -20px 0;
+}
+#contact .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#contact .row .col {
+	padding: 0 20px;
+	float: left;
+	box-sizing: border-box;
+}
+#contact .row .col.x-50 {
+	width: 50%;
+}
+#contact .row .col.x-100 {
+	width: 100%;
+}
+
+#contact .content-wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+#contact .get-in-touch {
+	max-width: 650px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+#contact .get-in-touch .title {
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 36px;
+	line-height: 48px;
+	padding-bottom: 48px;
+	font-weight:inherit;
+}
+
+#contact .contact-form .form-field {
+	position: relative;
+	margin: 15px 0;
+}
+#contact .contact-form .input-text {
+	display: block;
+	width: 100%;
+	height: 36px;
+	border-width: 0 0 2px 0;
+	border-color: #028e70;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+}
+#contact .contact-form .input-text:focus {
+	outline: none;
+}
+#contact .contact-form .input-text:focus + .label, #contact .contact-form .input-text.not-empty + .label {
+	-webkit-transform: translateY(-24px);
+	transform: translateY(-24px);
+}
+#contact .contact-form .label {
+	position: absolute;
+	left: 20px;
+	bottom: 11px;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #888;
+	cursor: text;
+	transition: -webkit-transform .2s ease-in-out;
+	transition: transform .2s ease-in-out;
+	transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+#contact .contact-form .submit-btn {
+	display: inline-block;
+	background-color: #333;
+	color: #fff;
+	letter-spacing: 2px;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px 16px;
+	cursor: pointer;
+	border-width: 1px;
+	border-color:#333;
+	transition: 0.4s ease all;
+}
+#contact .contact-form .submit-btn:hover {
+	border-color:#333;
+	color:#028e70;
+	background-color:#fff;
+}
+#contact .note {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	font-family: Lusitana, serif;
+	font-size: 16px;
+	line-height: 21px;
+}
+#contact .note .link {
+	color: #888;
+	text-decoration: none;
+}
+#contact .note .link:hover {
+	text-decoration: underline;
+}
+
+#contact .greska {
+	position: absolute;
+	top: 80%;
+	left: 6%;
+	color:red;
+}
+#contact .greska2 {
+	position: absolute;
+	left: 3%;
+	color:red;
+	display:block;
+	margin-top:0px;
+}
+#contact .textarea {
+	width:100%;
+	min-height:150px;
+	border-color:#028e70;
+	outline:none;
+	resize: none;
+	padding: 10px;
+	font-size: 100%;
+}
+
+.label-textarea {
+	color: #888;
+	font-size: 18px;
+	display: block;
+	margin-bottom: 8px;
+}
+
+.number {
+	width:1200px;
+	margin:0 auto;
+	clear:both;
+	text-align:center;
+	margin-bottom:50px;
+}
+.number p {
+}
+
+
+#footer {
+	clear:both;
+	display:block;
+	position:relative;
+	height:200px;
+	background:#333;
+	box-shadow:0 0 10px 1px #333;
+	overflow:hidden;
+}
+.footer {
+	width:1200px;
+	margin:0 auto;
+	text-align:center;
+}
+#footer a {
+	float:left;
+	margin-left:20%;
+	margin-top:80px;
+	font-size:30px;
+	color:#fff;
+	padding:15px;
+	display:block;
+	height:30px;
+}
+#footer .fa {
+	transition:0.5s ease all;
+}
+.fa-instagram:hover {
+	color:#c32aa3;
+}
+.fa-facebook:hover {
+	color:#3b5998;
+}
+.fa-youtube:hover {
+	color:#ff0000;
+}
+.fa-linkedin:hover {
+	color:#007bb5;
+}
+
+.copi {
+	display:block;
+	position:relative;
+	background:#028e70;
+	padding:5px;
+	text-align:center;
+	color:#fff;
+}
+.copi a {
+	text-decoration:none;
+	color:#fff;
+}
+
+.kosa {
+	text-align:center;
+	margin-bottom:70px;
+}
+
+.kosa2 {
+	text-align:center;
+	margin-top:50px;
+	margin-bottom:80px;
+}
+
+
+/* RESPONSIVE *//* RESPONSIVE *//* RESPONSIVE */
+/* RESPONSIVE *//* RESPONSIVE *//* RESPONSIVE */
+/* RESPONSIVE *//* RESPONSIVE *//* RESPONSIVE */
+
+
+
+@media (min-width: 1200px) {
+	.header-left-sredina .sidenav {
+		padding-top: 250px;
+	}	
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.wrapper {
+		width:100%;
+	}
+	.header-left-sredina .sidenav {
+		padding-top: 250px;
+	}
+	#about_us {
+		width:100%;
+	}
+	#about_us .about_left {
+		width:350px;
+	}
+	#about_us .about_right {
+		width:700px;
+	}
+	#about_us .about_right p {
+		margin-left:20%;
+		margin-right:0;
+	}
+	
+	#footer a {
+		margin-left:18%;
+	}
+	.footer {
+		width:100%;
+	}
+	#footer {
+		width:100%;
+	}
+	#main {
+		width:100%;
+	}
+	.main_levo {
+		float:left;
+		max-width:345px;
+		max-height:500px;
+		margin-left:90px
+	}
+	.main_levo img {
+		height:95%;
+	}
+	.main_desno2 img {
+		height:95%;
+	}
+	.main_desno {
+		float:left;
+		max-width:450px;
+		max-height:500px;
+		margin-left:30px;
+	}
+	
+	.main_levo2 {
+		float:left;
+		max-width:450px;
+		max-height:500px;
+	}
+	
+	.main_desno2 {
+		float:left;
+		max-width:345px;
+		max-height:500px;
+		margin-left:90px
+	}
+
+	
+	
+}
+
+
+@media (min-width: 812px) and (max-width: 991px) {
+	.header-left-sredina .sidenav {
+		padding-top: 250px;
+	}
+	#about_us {
+		width:100%;
+	}
+	#about_us .about_left {
+		width:250px;
+		left: 10%;
+		top:5%;
+	}
+	#about_us .about_right {
+		width:600px;
+	}
+	#about_us .about_right p {
+		margin-left:18%;
+		margin-right:0;
+	}
+	#contact {
+		width:100%;
+	}
+	#footer a {
+		margin-left:16%;
+	}
+	.footer {
+		width:100%;
+	}
+	#footer {
+		width:100%;
+	}
+
+	.wrapper {
+		width:100%;
+		margin:0 auto;
+	}
+
+	.main_levo {
+		float:none;
+		width:70%;
+		position:relative;
+		margin-left:20%;
+	}
+	.main_desno {
+		float:none;
+		width:70%;
+		position:relative;
+		margin-right:10px;
+		height:auto;
+		margin-bottom:40px;
+		margin-left:20%;
+	}
+	.main_desno p:nth-of-type(1) {
+		margin-top:0;
+	}
+	.main_levo2 p:nth-of-type(1) {
+		margin-top:0;
+	}
+	.main_desno a {
+		margin-top:10px;
+	}
+	.main_desno h3 {
+		margin-top:20px;
+	}
+	.main_levo2 {
+		float:none;
+		width:70%;
+		position:relative;
+		margin-right:10px;
+		height:auto;
+		margin-bottom:40px;
+		margin-left:20%;
+	}
+	.main_levo2 a {
+		margin-top:10px;
+	}
+	.main_levo2 h3 {
+		margin-top:20px;
+	}
+	.main_desno2 {
+		float:none;
+		width:70%;
+		position:relative;
+		margin-left:20%;
+	}
+	.number {
+		width:100%;
+	}
+	
+}
+@media (min-width: 768px) and (max-width: 811px) {
+	.header-left-sredina .sidenav {
+		padding-top: 250px;
+	}	
+	#about_us {
+		width:100%;
+	}
+	#about_us .about_left {
+		width:250px;
+		left: 2%;
+		top:5%;
+	}
+	#about_us .about_right {
+		width:600px;
+	}
+	#about_us .about_right p {
+		margin-left:18%;
+		margin-right:0;
+	}
+
+	
+	#contact {
+		width:100%;
+		
+	}
+	.wrapper {
+		width:100%;
+		margin:0 auto;
+	}
+
+	.main_levo {
+		float:none;
+		width:70%;
+		position:relative;
+		margin-left:20%;
+	}
+	.main_desno {
+		float:none;
+		width:70%;
+		position:relative;
+		margin-right:10px;
+		height:auto;
+		margin-bottom:40px;
+		margin-left:20%;
+	}
+	.main_desno p:nth-of-type(1) {
+		margin-top:0;
+	}
+	.main_levo2 p:nth-of-type(1) {
+		margin-top:0;
+	}
+	.main_desno a {
+		margin-top:10px;
+	}
+	.main_desno h3 {
+		margin-top:20px;
+	}
+	.main_levo2 {
+		float:none;
+		width:70%;
+		position:relative;
+		margin-right:10px;
+		height:auto;
+		margin-bottom:40px;
+		margin-left:20%;
+	}
+	.main_levo2 a {
+		margin-top:10px;
+	}
+	.main_levo2 h3 {
+		margin-top:20px;
+	}
+	.main_desno2 {
+		float:none;
+		width:70%;
+		position:relative;
+		margin-left:20%;
+	}
+	
+	
+	.nastavak_main h1 {
+		margin-top:25%;
+	}
+	#main_who_we_are h3 {
+		text-align:left;
+		margin-left:5%;
+	}
+	#footer a {
+		margin-left:16%;
+	}
+	.footer {
+		width:100%;
+	}
+	#footer {
+		width:100%;
+	}
+	.number {
+		width:100%;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+	.header-left {
+		width:100%;
+		position: fixed;
+		top: 0;
+		height:70px;
+		left: 0;
+		z-index: 999999;
+		display: block;
+		background: #fff;
+		box-shadow: 1px 0px 15px #111111;
+		overflow:hidden;
+		padding:5px;
+	}
+	.header-top {
+		top:90px;
+	}
+	.header-left-sredina .sidenav {
+		padding-top: 250px;
+	}
+	.header-left-top a {
+		margin-top:5px;
+	}
+	#header-left-sredina-open {
+		padding:0;
+	}
+	#header-left-sredina-open span {
+		color: #333;
+		position: absolute;
+		margin-top: -20px;
+		text-align: center;
+		margin-left:300%;
+	}
+	.header-left img {
+		margin-top:0;
+		padding-top:0;
+		max-height:60px;
+	}
+	#main_who_we_are h3 {
+		text-align:left;
+		margin-left:0;
+		margin-right:80px;
+	}
+	.main_levo {
+		float:none;
+		width:100%;
+		position:relative;
+	}
+	.main_desno {
+		float:none;
+		width:95%;
+		position:relative;
+		margin-left:15px;
+		margin-right:10px;
+		height:auto;
+		margin-bottom:20px;
+	}
+	.main_desno a {
+		margin-top:10px;
+	}
+	.main_desno h3 {
+		margin-top:20px;
+	}
+	.main_levo2 {
+		float:none;
+		width:95%;
+		position:relative;
+		margin-left:15px;
+		margin-right:10px;
+		height:auto;
+		margin-bottom:20px;
+	}
+	.main_levo2 a {
+		margin-top:10px;
+	}
+	.main_levo2 h3 {
+		margin-top:20px;
+	}
+	.main_desno2 {
+		float:none;
+		width:100%;
+		position:relative;
+	}
+	
+	#about_us {
+		width:100%;
+	}
+	#about_us .about_left {
+		width:250px;
+		position:relative;
+		height:auto;
+	}
+	#about_us .about_right {
+		width:100%;
+		padding:10px;
+	}
+	#about_us .about_right p {
+		margin-left:5%;
+		margin-right:2%;
+	}
+	#contact .row .col.x-50 {
+		width:100%;
+	}
+	#contact {
+		width:100%;
+	}
+	
+	.wrapper {
+		width:100%;
+	}
+	.header-bottom  {
+		position: absolute;
+		bottom:1px;
+		text-transform: uppercase;
+		left: 50%;
+		letter-spacing: 7px;
+		cursor: pointer;
+		transform: translateX(-50%);
+		width: 90%;
+		text-align: center;
+	}
+	.header-left-sredina .sidenav {
+		padding-top: 250px;
+	}	
+	.nastavak_main h1 {
+		margin-top:25%;
+	}
+	
+	#footer a {
+		margin-left:15%;
+	}
+	.footer {
+		width:100%;
+	}
+	.number {
+		width:100%;
+	}
+	#contact .get-in-touch{
+		top:60%;	
+	}
+	
+}
+@media (min-width: 321px) and (max-width: 575px) {
+	.header-left {
+		width:100%;
+		position: fixed;
+		top: 0;
+		height:70px;
+		left: 0;
+		z-index: 999999;
+		display: block;
+		background: #fff;
+		box-shadow: 1px 0px 15px #111111;
+		overflow:hidden;
+		padding:5px;
+	}
+	.header-left-sredina .sidenav {
+		padding-top: 250px;
+	}
+	.header-top {
+		top:90px;
+	}
+	.header-left-top a {
+		margin-top:5px;
+	}
+	#header-left-sredina-open {
+		padding:0;
+	}
+	#header-left-sredina-open span {
+		color: #333;
+		position: absolute;
+		margin-top: -20px;
+		text-align: center;
+		margin-left: 150%;
+	}
+	.header-left img {
+		margin-top:0;
+		padding-top:0;
+		max-height:60px;
+	}
+	#main_who_we_are h3 {
+		text-align:left;
+		
+	}
+	.slider-active .owl-nav div {
+		top:0;
+	}
+	.main_who_we_are {
+		margin-left:10%;
+	}
+	.main_levo {
+		float:none;
+		width:100%;
+		position:relative;
+	}
+	.main_desno {
+		float:none;
+		width:95%;
+		position:relative;
+		margin-left:15px;
+		margin-right:10px;
+		height:auto;
+		margin-bottom:20px;
+	}
+	.main_desno a {
+		margin-top:10px;
+		width:30%;
+	}
+	.main_desno h3 {
+		margin-top:20px;
+	}
+	.main_levo2 {
+		float:none;
+		width:95%;
+		position:relative;
+		margin-left:15px;
+		margin-right:10px;
+		height:auto;
+		margin-bottom:20px;
+	}
+	.main_levo2 a {
+		margin-top:10px;
+		width:30%;
+	}
+	.main_levo2 h3 {
+		margin-top:20px;
+	}
+	.main_desno2 {
+		float:none;
+		width:100%;
+		position:relative;
+	}
+	
+	#about_us {
+		width:100%;
+	}
+	#about_us .about_left {
+		width:250px;
+		position:relative;
+		height:auto;
+	}
+	#about_us .about_right {
+		width:100%;
+		padding:10px;
+	}
+	#about_us .about_right p {
+		margin-left:5%;
+		margin-right:2%;
+	}
+	#contact .row .col.x-50 {
+		width:100%;
+	}
+	
+	#contact {
+		width:100%;
+		
+	}
+	
+	.wrapper {
+		width:100%;
+	}
+	.header-top {
+		width:250px;
+	}
+	.header-top img {
+		width:100%;
+	}
+	.header-bottom  {
+		position: absolute;
+		bottom:1px;
+		text-transform: uppercase;
+		left: 50%;
+		letter-spacing: 7px;
+		cursor: pointer;
+		transform: translateX(-50%);
+		width: 90%;
+		text-align: center;
+	}
+	.header-sredina h1 {
+		font-size:40px;
+		line-height:50px;
+		margin-left:10%;
+		margin-top:-50px;
+	}
+	.nastavak_main h1 {
+		margin-top:25%;
+	}
+
+	#footer a {
+		float:none;
+		margin-top:2%;
+		margin-left:5%;
+	}
+	.footer {
+		width:100%;
+	}
+	#footer {
+		width:100%;
+		height:280px;
+	}
+	.number {
+		width:100%;
+	}
+	#contact .get-in-touch{
+		top:60%;	
+	}
+	
+}
+@media (max-width: 320px) {
+	.header-left {
+		width:100%;
+		position: fixed;
+		top: 0;
+		height:70px;
+		left: 0;
+		z-index: 999999;
+		display: block;
+		background: #fff;
+		box-shadow: 1px 0px 15px #111111;
+		overflow:hidden;
+		padding:5px;
+	}
+	.header-top {
+		top:90px;
+	}
+	.header-left-sredina .sidenav {
+		padding-top: 250px;
+	}
+	.header-left-top a {
+		margin-top:5px;
+	}
+	#header-left-sredina-open {
+		padding:0;
+	}
+	#header-left-sredina-open span {
+		color: #333;
+		position: absolute;
+		margin-top: -20px;
+		text-align: center;
+		margin-left: 150%;
+	}
+	.header-left img {
+		margin-top:0;
+		padding-top:0;
+		max-height:60px;
+	}
+	#main_who_we_are h3 {
+		text-align:left;
+		display:block;
+		position:relative;
+		width:100%;
+	}
+	.main_levo {
+		float:none;
+		width:100%;
+		position:relative;
+	}
+	.main_desno {
+		float:none;
+		width:95%;
+		position:relative;
+		margin-left:15px;
+		margin-right:10px;
+		height:auto;
+		margin-bottom:20px;
+	}
+	.main_desno a {
+		margin-top:10px;
+		width:50%;
+		font-size:15px;
+	}
+	.main_desno h3 {
+		margin-top:20px;
+	}
+	.main_levo2 {
+		float:none;
+		width:95%;
+		position:relative;
+		margin-left:15px;
+		margin-right:10px;
+		height:auto;
+		margin-bottom:20px;
+	}
+	.main_levo2 a {
+		margin-top:10px;
+		width:50%;
+		font-size:15px;
+	}
+	.main_levo2 h3 {
+		margin-top:20px;
+	}
+	.main_desno2 {
+		float:none;
+		width:100%;
+		position:relative;
+	}
+	
+	.slider-active .owl-nav div {
+		top:0;
+	}
+	.main_who_we_are {
+		margin-left:10%;
+	}
+	#about_us {
+		width:100%;
+	}
+	#about_us .about_left {
+		width:250px;
+		position:relative;
+		height:auto;
+	}
+	#about_us .about_right {
+		width:100%;
+		padding:10px;
+	}
+	#about_us .about_right p {
+		margin-left:5%;
+		margin-right:2%;
+	}
+	
+	#contact .row .col.x-50 {
+		width:100%;
+	}
+	
+	.wrapper {
+		width:100%;
+	}
+	.header-top {
+		width:150px;
+	}
+	.header-top img {
+		width:100%;
+		margin-left:15%;
+	}
+	.header-sredina h1 {
+		font-size:40px;
+		line-height:50px;
+		margin-left:10%;
+		margin-top:-50px;
+	}
+	.header-bottom  {
+		position: absolute;
+		bottom:0px;
+		text-transform: uppercase;
+		left: 50%;
+		letter-spacing: 7px;
+		cursor: pointer;
+		transform: translateX(-50%);
+		width: 90%;
+		text-align: center;
+	}
+	
+	#footer a {
+		float:none;
+		margin-top:2%;
+		margin-left:5%;
+	}
+	.footer {
+		width:100%;
+	}
+	#footer {
+		width:100%;
+		height:270px;
+	}
+	.number {
+		width:100%;
+	}
+	#contact .get-in-touch{
+		top:60%;	
+	}
+	
+}
+
+
+/****************************** ADMIN PANEL ****************************/
+
+/****** Custom Input File ******/
+.custom-input-file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.custom-input-file + label {
+	max-width: 80%;
+	font-size: 20px;
+	font-weight: 700;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+}
+
+.custom-input-file:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.custom-input-file + label svg {
+	width: 1em;
+	height: 1em;
+	vertical-align: middle;
+	fill: currentColor;
+	margin-top: -0.25em;
+	margin-right: 0.25em;
+}
+
+.custom-input-file + label {
+	color: #fff;
+	background-color: #4387FF;
+}
+
+.custom-input-file:focus + label,
+.custom-input-file + label:hover {
+	background-color: #3C7AE9;
+}
+
+/* Admin Images */
+img.ap_pi {
+	height: 300px;
+	width: auto;
+	margin: 20px auto;
+    display: block;
+}
+
+/** Image Tooltip */
+.image-tooltip img {
+	width: auto;
+}
+
+.image-tooltip {
+    text-decoration: none;
+    position: relative;
+}
+.image-tooltip span {
+    display: none;
+}
+.image-tooltip:hover span {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+}
