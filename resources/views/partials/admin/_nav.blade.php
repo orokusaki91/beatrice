@@ -1,7 +1,7 @@
 <nav>  
    <div class="admin_panel_head">
-    	<h1><a href="{{ url('admin') }}" style="text-decoration: none; color: #fff">Beatrice Admin</a></h1>
      	@if(Auth::check())
+      <h1><a href="{{ url('admin') }}" style="text-decoration: none; color: #fff">Beatrice Admin</a></h1>
 			<form action="{{ url('admin/logout') }}" method="post">
 	      		{{ csrf_field() }}
 	      		<button type="submit">Log out</button>
