@@ -624,13 +624,14 @@ img {
 	padding: 8px 16px;
 	cursor: pointer;
 	border-width: 1px;
-	border-color:#333;
 	transition: 0.4s ease all;
+	border:1px solid #333;
+	outline:none;
 }
 #contact .contact-form .submit-btn:hover {
-	border-color:#333;
 	color:#028e70;
 	background-color:#fff;
+	border:1px solid #028e70;
 }
 #contact .note {
 	position: absolute;
