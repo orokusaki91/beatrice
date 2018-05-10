@@ -1502,91 +1502,15 @@ img {
 }
 
 
-/****************************** ADMIN PANEL ****************************/
-
-/****** Custom Input File ******/
-.custom-input-file {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
-}
-
-.custom-input-file + label {
-	max-width: 80%;
-	font-size: 20px;
-	font-weight: 700;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	cursor: pointer;
-	display: inline-block;
-	overflow: hidden;
-	padding: 10px 20px;
-	margin-bottom: 15px;
-}
-
-.custom-input-file:focus + label {
-	outline: 1px dotted #000;
-	outline: -webkit-focus-ring-color auto 5px;
-}
-
-.custom-input-file + label svg {
-	width: 1em;
-	height: 1em;
-	vertical-align: middle;
-	fill: currentColor;
-	margin-top: -0.25em;
-	margin-right: 0.25em;
-}
-
-.custom-input-file + label {
-	color: #fff;
-	background-color: #4387FF;
-}
-
-.custom-input-file:focus + label,
-.custom-input-file + label:hover {
-	background-color: #3C7AE9;
-}
-
-/* Admin Images */
-img.ap_pi {
-	height: 300px;
-	width: auto;
-	margin: 20px auto;
-    display: block;
-}
-
-/** Image Tooltip */
-.image-tooltip img {
-	width: auto;
-}
-
-.image-tooltip {
-    text-decoration: none;
-    position: relative;
-}
-.image-tooltip span {
-    display: none;
-}
-.image-tooltip:hover span {
-    display: block;
-    position: fixed;
-    overflow: hidden;
-    z-index: 1;
-}
 
 
 
 
-
-/* ADMIN PANEL */
+/* ADMIN PANEL NIKOLA */
 /* ADMIN PANEL *//* ADMIN PANEL */
 /* ADMIN PANEL *//* ADMIN PANEL */
 /* ADMIN PANEL *//* ADMIN PANEL */
-.admin_panel_head {
+.admin_panel_head_inner {
 	height:60px;
 	background:#333;
 	overflow:hidden;
@@ -1595,14 +1519,14 @@ img.ap_pi {
 	position:relative;
 	box-shadow:0px 1px 4px #333;
 }
-.admin_panel_head h1 {
+.admin_panel_head_inner h1 {
 	margin:0;
 	float:left;
 	padding:10px;
 	color:#fff;
 	margin-top:5px;
 }
-.admin_panel_head button[type=submit] {
+.admin_panel_head_inner button[type=submit] {
 	margin:10px;
 	padding:10px;
 	text-decoration:none;
@@ -1615,7 +1539,7 @@ img.ap_pi {
 	outline:none;
 	margin-top:12px;
 }
-.admin_panel_head button[type=submit]:hover {
+.admin_panel_head_inner button[type=submit]:hover {
 	color:#333;
 	border:1px solid #333;
 	background:#fff;
@@ -1627,17 +1551,6 @@ img.ap_pi {
 }
 
 
-
-.admin_panel_main .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    background-color: #4387FF;
-    overflow-x: hidden;
-    padding-top: 50px;
-}
 
 .admin_panel_main .sidenav a, .admin_panel_main .dropdown-btn {
     padding: 20px 8px 20px 16px;
@@ -1653,9 +1566,12 @@ img.ap_pi {
     outline: none;
 }
 
-.admin_panel_main .sidenav a:hover, .admin_panel_main .dropdown-btn:hover {
-    color: #4387FF;
+.admin_panel_main .dropdown-btn:hover {
+	color: #028e70;
 	background:#fff;
+}
+.admin_panel_main .sidenav a:hover {
+    color: #028e70;
 }
 
 .admin_panel_main .main {
@@ -1665,8 +1581,8 @@ img.ap_pi {
 }
 
 .admin_panel_main .active {
-    background-color: #fff;
-    color: #4387FF;
+    color: #028e70;
+	background:#fff;
 }
 
 .admin_panel_main .dropdown-container {
@@ -1721,7 +1637,7 @@ input[disabled]:hover {
 	color:#000 !important;
 }
 
-.admin_panel_head {
+.admin_panel_head_inner {
 	position:fixed;
 	width:100%;
 	top:0;
@@ -1729,15 +1645,15 @@ input[disabled]:hover {
 
 
 .admin_panel_main .sidenav {
-	height: 100%;
-    width: 15%;
-   display:block;
+	 height: 100%;
+    width: 200px;
+    position: fixed;
 	min-height:1000px;
     top: 60px;
     left: 0;
-    background-color: #4387FF;
+    background-color: #028e70;
     overflow-x: hidden;
-    padding-top: 50px;
+    padding-top:0px;
 }
 
 .admin_panel_main .dropdown-container a {
@@ -1768,7 +1684,7 @@ input[disabled]:hover {
 	margin-bottom:50px;
 }
 .main input[type=submit] {
-	background:#09181F;
+	background:#333;
 	padding:15px 35px;
 	border:0;
 	border-radius:10px;
@@ -1790,7 +1706,7 @@ input[disabled]:hover {
 	background:#1EB587;
 }
 .main h3 {
-	color:#4387FF;
+	color:#000;
 	letter-spacing:1px;
 	margin-top:60px;
 }
@@ -1809,6 +1725,7 @@ input[disabled]:hover {
 }
 .main table tr {
 	margin-top:50px;
+	text-align:center;
 }
 .main table button[type=submit] {
 	color:red !important;
@@ -1822,11 +1739,11 @@ input[disabled]:hover {
     display: block;
     width: 100% !important;
     text-align: center !important;
-	font-size:16px;
+	font-size:14px;
 	letter-spacing:1px;
 }
 .main table button[type=submit]:hover {
-	text-decoration:underline;
+	text-decoration:underline !important;
 }
 
 .main table a {
@@ -1847,7 +1764,7 @@ input[disabled]:hover {
 }
 .main table a:hover {
 	box-shadow:none !important;
-	text-decoration:underline;
+	text-decoration:underline !important;
 }
 .main table thead tr th {
 	margin-top:50px;
@@ -1880,6 +1797,74 @@ input[disabled]:hover {
 	text-decoration:none;
 }
 
+.mainnikola {
+	color: #1EB587;
+    padding: 5px !important;
+    margin-top: 5px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    display: block !important;
+    text-decoration: none !important;
+    /* text-align: center; */
+    transition: 0.3s ease all !important;
+    letter-spacing: -1px !important;
+    width: 25% !important;
+}
+
+
+
+.fa-power-off2 {
+	display:none;
+}
+.form-group:nth-of-type(1) {
+	text-align:center;
+	margin-top:20%;
+	display:block;
+}
+.form-group {
+	text-align:center;
+	display:block;
+}
+
+.form-group label {
+	display:block !important;
+	margin-bottom:5px !important;
+}
+.form-group input {
+	margin-bottom: 20px !important;
+    padding: 8px;
+    border-radius: 2px;
+    border-color: #000;
+    border: 1px solid #000;
+    outline: none;
+
+}
+.form-group a {
+	text-decoration:none;
+	display:block;
+	color:#0042F5;
+	margin-top:20px;
+}
+.form-group a:hover {
+	text-decoration:underline;
+}
+.form-group button {
+	padding:8px 15px;
+	background:#028e70;
+	letter-spacing:1px;
+	border-radius:5px;
+	border:1px solid #028e70;
+	color:#fff;
+	outline:none;
+	transition:0.3s ease all;
+}
+.form-group button:hover {
+	background:#fff;
+	border:1px solid #028e70;
+	color:#028e70;
+	cursor:pointer;
+}
 
 
 
@@ -1918,16 +1903,14 @@ input[disabled]:hover {
 
 @media (min-width: 321px) and (max-width: 575px) {
 	.admin_panel_main .sidenav {
-		min-height:200px !important;
+		min-height:auto !important;
 		width:100%;
 		top: 60px;
 		left: 0;
-		background-color: #4387FF;
 		overflow: hidden;
-		padding-top: 20px;
+		padding-top:0px;
 		position:relative;
 		display:block;
-		
 		}
 		
 		.admin_panel_main .main {
@@ -1941,29 +1924,39 @@ input[disabled]:hover {
 			display:block;
 			position:relative;
 		}
-		.admin_panel_head button[type=submit] {
+		.admin_panel_head_inner button[type=submit] {
 			margin:0;
 			margin-top:10px;
 		}
 	
-		.admin_panel_head button[type=submit]:first-of-type {
+		.admin_panel_head_inner button[type=submit]:first-of-type {
 			display:none;
 		}
+		
+		.mainnikola {
+			width:90% !important;
+			margin-left:3% !important;
+		}
+		
 }
 
 
 @media (max-width: 320px) {
 	.admin_panel_main .sidenav {
-		min-height:150px !important;
+		min-height:auto !important;
 		width:100%;
-		top: 130px;
+		top: 58px;
 		left: 0;
-		background-color: #4387FF;
 		overflow: hidden;
-		padding-top: 20px;
+		padding-top: 0px;
 		position:relative;
 		display:block;
 		margin-bottom:30px;
+		}
+		
+		.admin_panel_main .active {
+		color: #fff;
+		background:#028e70;
 		}
 		
 		.admin_panel_main .main {
@@ -1977,18 +1970,107 @@ input[disabled]:hover {
 			display:block;
 			position:relative;
 		}
-		.admin_panel_head {
-			height:130px;
+		.admin_panel_head_inner {
+			height:auto;
 		}
-		.admin_panel_head button[type=submit]:first-of-type {
+		.admin_panel_head_inner button[type=submit]:first-of-type {
 			display:none;
 		}
 		
 		.main input[type=file] {
 			margin-left:10%;
 		}
+		.mainnikola {
+			width:95% !important;
+			margin-left:3% !important;
+			font-size:15px;
+		}
+		.main {
+			margin-top:50px;
+		}
 }
 
+
+/****************************** ADMIN PANEL UROS ****************************/
+
+/****** Custom Input File ******/
+.custom-input-file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.custom-input-file + label {
+	max-width: 80%;
+	font-size: 20px;
+	font-weight: 700;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+}
+
+.custom-input-file:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.custom-input-file + label svg {
+	width: 1em;
+	height: 1em;
+	vertical-align: middle;
+	fill: currentColor;
+	margin-top: -0.25em;
+	margin-right: 0.25em;
+}
+
+.custom-input-file + label {
+	color: #fff;
+	text-align: center;
+    margin-left: 44%;
+    background: #333;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.custom-input-file:focus + label,
+.custom-input-file + label:hover {
+	background-color: #028e70;
+}
+
+/* Admin Images */
+img.ap_pi {
+	height: 300px;
+	width: auto;
+	margin: 20px auto;
+    display: block;
+}
+
+/** Image Tooltip */
+.image-tooltip img {
+	width: auto;
+}
+
+.image-tooltip {
+    text-decoration: none;
+    position: relative;
+}
+.image-tooltip span {
+    display: none;
+}
+.image-tooltip:hover span {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+}
 
 
 

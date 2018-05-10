@@ -9,7 +9,7 @@
 <div class="admin_panel_main">
     @include('partials.admin._sidebar')
     <div class="main">
-        <a href="{{ url('admin/pages/services/create') }}">Neue Dienstleistung hinzufügen</a>
+        <a href="{{ url('admin/pages/services/create') }}" class="mainnikola">Neue Dienstleistung hinzufügen</a>
         <table>
             <thead>
                 <tr>
