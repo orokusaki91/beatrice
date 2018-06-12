@@ -1725,7 +1725,11 @@ input[disabled]:hover {
 	margin-left:40%;
 }*/
 .main input[type=text] {
-	margin-bottom:50px;
+	margin-bottom: 50px;
+    padding: 5px;
+    border-color: aliceblue;
+    border-radius: 5px;
+	
 }
 .main input[type=submit] {
 	background:#333;
