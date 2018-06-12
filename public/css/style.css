@@ -37,6 +37,10 @@ img {
 	left: 50%;
 	transform: translateX(-50%);
 	color:#fff;
+	width:250px;
+}
+.header-top img {
+	width:100%;
 }
 .header-top h1 {
 	border-bottom:1px solid #fff;
@@ -112,6 +116,9 @@ img {
 	text-decoration:none;
 	color:#fff;
 	display:block;
+}
+.header-left-top img {
+	width:90%;
 }
 
 .header-left-sredina {
@@ -300,7 +307,7 @@ img {
 	clear:both;
 	overflow:hidden;
 	height:500px;
-	margin-top:80px;
+	margin-top:10px;
 	margin-bottom:50px;
 	width:100%;
 	background: url(img/finish/slogan.jpg) no-repeat fixed top;
