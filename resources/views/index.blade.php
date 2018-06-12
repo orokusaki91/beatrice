@@ -19,7 +19,7 @@
         </div>
     @endforeach
 </div>
-<div class="nastavak_main" style="background:url({{ asset('storage/uploads/slogan/' . $slogan->image) }}) no-repeat fixed ;">
+<div class="nastavak_main" style="background:url({{ asset('storage/uploads/slogan/' . $slogan->image) }}) no-repeat fixed top center;">
     {!! $slogan->text !!}
 </div>
 <div class="kosa">

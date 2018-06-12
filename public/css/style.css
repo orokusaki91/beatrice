@@ -310,7 +310,8 @@ img {
 	margin-top:10px;
 	margin-bottom:50px;
 	width:100%;
-	background: url(img/finish/slogan.jpg) no-repeat fixed top;
+	background: url(img/finish/slogan.jpg) no-repeat fixed center;
+	background-position:center;
 }
 .nastavak_main h1 {
 	text-align:center;
@@ -824,7 +825,7 @@ img {
 	.main_desno {
 		float:left;
 		max-width:450px;
-		max-height:500px;
+		height:auto;
 		margin-left:30px;
 	}
 	
@@ -840,8 +841,14 @@ img {
 		max-height:500px;
 		margin-left:90px
 	}
-
 	
+	.main_desno h3 {
+		margin-top:20px;
+	}
+	
+	.main_levo2 h3 {
+		margin-top:20px;
+	}
 	
 }
 
@@ -856,7 +863,7 @@ img {
 	#about_us .about_left {
 		width:250px;
 		left: 10%;
-		top:5%;
+
 	}
 	#about_us .about_right {
 		width:600px;
@@ -897,6 +904,7 @@ img {
 		height:auto;
 		margin-bottom:40px;
 		margin-left:20%;
+		min-height:300px;
 	}
 	.main_desno p:nth-of-type(1) {
 		margin-top:0;
@@ -918,6 +926,7 @@ img {
 		height:auto;
 		margin-bottom:40px;
 		margin-left:20%;
+		min-height:200px;
 	}
 	.main_levo2 a {
 		margin-top:10px;
@@ -930,6 +939,7 @@ img {
 		width:70%;
 		position:relative;
 		margin-left:20%;
+		height:auto;
 	}
 	.number {
 		width:100%;
@@ -946,7 +956,7 @@ img {
 	#about_us .about_left {
 		width:250px;
 		left: 2%;
-		top:5%;
+	
 	}
 	#about_us .about_right {
 		width:600px;
@@ -956,7 +966,7 @@ img {
 		margin-right:0;
 	}
 
-	
+
 	#contact {
 		width:100%;
 		
@@ -971,6 +981,8 @@ img {
 		width:70%;
 		position:relative;
 		margin-left:20%;
+		height:auto;
+		min-height:200px;
 	}
 	.main_desno {
 		float:none;
@@ -978,6 +990,7 @@ img {
 		position:relative;
 		margin-right:10px;
 		height:auto;
+		min-height:200px;
 		margin-bottom:40px;
 		margin-left:20%;
 	}
@@ -1001,6 +1014,7 @@ img {
 		height:auto;
 		margin-bottom:40px;
 		margin-left:20%;
+		min-height:200px;
 	}
 	.main_levo2 a {
 		margin-top:10px;
@@ -1014,7 +1028,9 @@ img {
 		position:relative;
 		margin-left:20%;
 	}
-	
+	.main_desno2 {
+		height:auto;
+	}
 	
 	.nastavak_main h1 {
 		margin-top:25%;
@@ -1091,7 +1107,12 @@ img {
 		margin-left:15px;
 		margin-right:10px;
 		height:auto;
+		min-height:200px;
 		margin-bottom:20px;
+	}
+	.main_desno2 {
+		height:auto;
+		min-height:200px;
 	}
 	.main_desno a {
 		margin-top:10px;
@@ -1106,6 +1127,7 @@ img {
 		margin-left:15px;
 		margin-right:10px;
 		height:auto;
+		min-height:200px;
 		margin-bottom:20px;
 	}
 	.main_levo2 a {
@@ -1230,6 +1252,8 @@ img {
 		float:none;
 		width:100%;
 		position:relative;
+		height:auto;
+		min-height:200px;
 	}
 	.main_desno {
 		float:none;
@@ -1238,11 +1262,12 @@ img {
 		margin-left:15px;
 		margin-right:10px;
 		height:auto;
+		min-height:200px;
 		margin-bottom:20px;
 	}
 	.main_desno a {
 		margin-top:10px;
-		width:30%;
+		width:40%;
 	}
 	.main_desno h3 {
 		margin-top:20px;
@@ -1255,10 +1280,12 @@ img {
 		margin-right:10px;
 		height:auto;
 		margin-bottom:20px;
+		min-height:200px;
+		max-height:none;
 	}
 	.main_levo2 a {
 		margin-top:10px;
-		width:30%;
+		width:40%;
 	}
 	.main_levo2 h3 {
 		margin-top:20px;
@@ -1267,6 +1294,7 @@ img {
 		float:none;
 		width:100%;
 		position:relative;
+		height:auto;
 	}
 	
 	#about_us {
@@ -1392,6 +1420,7 @@ img {
 		float:none;
 		width:100%;
 		position:relative;
+		height:auto;
 	}
 	.main_desno {
 		float:none;
@@ -1400,6 +1429,7 @@ img {
 		margin-left:15px;
 		margin-right:10px;
 		height:auto;
+		min-height:200px;
 		margin-bottom:20px;
 	}
 	.main_desno a {
@@ -1417,7 +1447,9 @@ img {
 		margin-left:15px;
 		margin-right:10px;
 		height:auto;
+		min-height:200px;
 		margin-bottom:20px;
+		max-height:none;
 	}
 	.main_levo2 a {
 		margin-top:10px;
@@ -1431,6 +1463,8 @@ img {
 		float:none;
 		width:100%;
 		position:relative;
+		height:auto;
+		min-height:200px;
 	}
 	
 	.slider-active .owl-nav div {
