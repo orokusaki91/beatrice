@@ -23,6 +23,7 @@ img {
 	text-align: center;
 	overflow:hidden;
 	margin-bottom:40px;
+	position: relative;
 	-webkit-animation: slide 40s ease infinite;
 }
 @-webkit-keyframes slide {
@@ -1172,7 +1173,6 @@ img {
 	}
 	.header-bottom  {
 		position: absolute;
-		bottom:1px;
 		text-transform: uppercase;
 		left: 50%;
 		letter-spacing: 7px;
@@ -1335,7 +1335,6 @@ img {
 	}
 	.header-bottom  {
 		position: absolute;
-		bottom:1px;
 		text-transform: uppercase;
 		left: 50%;
 		letter-spacing: 7px;
@@ -1514,7 +1513,6 @@ img {
 	}
 	.header-bottom  {
 		position: absolute;
-		bottom:0px;
 		text-transform: uppercase;
 		left: 50%;
 		letter-spacing: 7px;
