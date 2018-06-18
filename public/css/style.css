@@ -763,7 +763,7 @@ img {
 .kosa2 {
 	text-align:center;
 	margin-top:50px;
-	margin-bottom:80px;
+	margin-bottom:40px;
 }
 
 
@@ -801,7 +801,7 @@ img {
 	}
 	
 	#footer a {
-		margin-left:18%;
+		margin-left:28%;
 	}
 	.footer {
 		width:100%;
@@ -879,7 +879,7 @@ img {
 		width:100%;
 	}
 	#footer a {
-		margin-left:16%;
+		margin-left:26%;
 	}
 	.footer {
 		width:100%;
@@ -971,7 +971,7 @@ img {
 
 
 	#contact {
-		width:100%;
+		width:90%;
 		
 	}
 	.wrapper {
@@ -1043,7 +1043,7 @@ img {
 		margin-left:5%;
 	}
 	#footer a {
-		margin-left:16%;
+		margin-left:26%;
 	}
 	.footer {
 		width:100%;
@@ -1165,7 +1165,7 @@ img {
 		width:100%;
 	}
 	#contact {
-		width:100%;
+		width:90%;
 	}
 	
 	.wrapper {
@@ -1189,7 +1189,7 @@ img {
 	}
 	
 	#footer a {
-		margin-left:15%;
+		margin-left:25%;
 	}
 	.footer {
 		width:100%;
@@ -1320,7 +1320,7 @@ img {
 	}
 	
 	#contact {
-		width:100%;
+		width:90%;
 		
 	}
 	
@@ -1355,7 +1355,7 @@ img {
 
 	#footer a {
 		float:none;
-		margin-top:2%;
+		margin-top:7%;
 		margin-left:5%;
 	}
 	.footer {
@@ -1370,6 +1370,9 @@ img {
 	}
 	#contact .get-in-touch{
 		top:60%;	
+	}
+	#contact .contact-form .submit-btn {
+		margin-bottom:20px;
 	}
 	
 }
@@ -1524,7 +1527,7 @@ img {
 	
 	#footer a {
 		float:none;
-		margin-top:2%;
+		margin-top:7%;
 		margin-left:5%;
 	}
 	.footer {
@@ -1537,8 +1540,14 @@ img {
 	.number {
 		width:100%;
 	}
+	#contact {
+		width:90%;
+	}
 	#contact .get-in-touch{
 		top:60%;	
+	}
+	#contact .contact-form .submit-btn {
+		margin-bottom:20px;
 	}
 	
 }
