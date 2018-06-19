@@ -22,9 +22,9 @@ img {
 	min-height:800px;
 	text-align: center;
 	overflow:hidden;
-	margin-bottom:40px;
 	position: relative;
 	-webkit-animation: slide 40s ease infinite;
+	margin-bottom:50px;
 }
 @-webkit-keyframes slide {
 	0% { background-position: 0 0; }
