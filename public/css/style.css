@@ -86,7 +86,7 @@ img {
 .header-bottom a {
 	color:#fff;
 	text-decoration:none;
-	opacity: 0.2;
+	opacity: 0.8;
 	transition:0.3s ease all;
 }
 .header-bottom a:hover {
