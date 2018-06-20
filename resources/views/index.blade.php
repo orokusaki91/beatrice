@@ -9,14 +9,17 @@
 @section('content')
 <div id="main" class="wrapper">
     @foreach($services as $key => $service)
+    <div class="main">
         <div class="{{ $key % 2 == 1 ? 'main_desno2' : 'main_levo' }}">
             <img src="{{ asset('storage/uploads/services/' . $service->image) }}">
         </div>
+      
         <div class="{{ $key % 2 == 1 ? 'main_levo2' : 'main_desno' }}">
             <h3>{{ $service->title }}</h3>
             {!! $service->text !!}
             <a href="#">Lorem ipsum</a>
         </div>
+    </div>
     @endforeach
 </div>
 <div class="nastavak_main" style="background:url({{ asset('storage/uploads/slogan/' . $slogan->image) }}) no-repeat fixed top center; background-size: cover; ">
