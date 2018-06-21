@@ -1379,6 +1379,9 @@ img {
 	
 }
 @media (max-width: 320px) {
+	.header-sredina {
+		margin-top:20%;
+	}
 	.header-left {
 		width:100%;
 		position: fixed;
