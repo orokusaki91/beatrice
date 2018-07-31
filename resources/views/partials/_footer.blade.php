@@ -5,7 +5,8 @@
   	</div>
 </div>
 <div class="copi">
-	<p>Copyright &copy; <a href="http://mpsoft.ch/" target="_blank">MP Soft GmbH</a>.All right reserved</p>
+	<p>Copyright &copy; Beatrice Niederhauser .All right reserved.</p>
+    <p>Designed by <a href="http://mpsoft.ch/" target="_blank">MP Soft GmbH</a></p>
 </div>
 @include('partials._scripts')
 @yield('scripts')
